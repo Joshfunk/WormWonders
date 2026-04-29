@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Worm Wonders — Home Composting Supplies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Urban Worm Wonders</h1>
+        <p class="tagline-sub">Home Composting &nbsp;·&nbsp; Mission, BC Canada</p>
+        <button class="contact-btn" onclick="document.getElementById('contact-popup').style.display='block'">Contact</button>
+        <div id="contact-popup" class="contact-popup">
+            <div class="contact-popup-content">
+                <span class="close" onclick="document.getElementById('contact-popup').style.display='none'">&times;</span>
+                <h3>Get in Touch</h3>
+                <p>Phone: <a href="tel:604-751-4588">604-751-4588</a></p>
+                <p>Email: <a href="mailto:wormwonders@gmail.com">wormwonders@gmail.com</a></p>
+                <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem;">In-person pickup available in Mission, BC</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner strip — replaces the floating image placeholders -->
+    <div class="banner-strip"></div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="composting-101.html">Composting 101</a></li>
+            <li><a href="composting-worms.html">Composting Worms</a></li>
+            <li><a href="castings.html">Castings</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <div class="page-hero">
+            <p class="eyebrow">Welcome to Urban Worm Wonders</p>
+            <h2>Making <em>the Most</em> of Your Compost</h2>
+            <div class="hero-divider"></div>
+            <p>In today's urban setting of smaller homes and condos, most people think composting is only for those with vast backyards and farms. Not true — composting can be done by everyone, from single-family homes with flower beds and raised vegetable plots to condo owners with wonderful balcony gardens.</p>
+            <p class="tagline">So come on in&hellip; explore&hellip; learn&hellip; get your hands dirty&hellip; and go play in the garden&hellip;</p>
+        </div>
+
+        <h2>Your Guide to Worm Composting</h2>
+        <p>Whether you have a large backyard or a small balcony, worm composting is accessible to everyone. Explore the sections below to get started.</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Composting 101</h3>
+                <p>Learn the basics of worm composting — the three essential components you need to get started.</p>
+                <a href="composting-101.html">Learn More →</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Composting Worms</h3>
+                <p>Discover which worms are best for composting, what to feed them, and what to avoid.</p>
+                <a href="composting-worms.html">Learn More →</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Worm Castings</h3>
+                <p>Learn about the "black gold" your worms produce and how to put it to work in your garden.</p>
+                <a href="castings.html">Learn More →</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Products</h3>
+                <p>Browse our selection of composting worms, castings, and supplies. Canadian shipping only.</p>
+                <a href="products.html">View Products →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom banner strip -->
+    <div class="banner-strip"></div>
+
+    <footer>
+        <p>&copy; 2012 Urban Worm Wonders &nbsp;·&nbsp; BC Canada</p>
+    </footer>
+
+    <script>
+        // Close popup when clicking outside
+        document.addEventListener('click', function(e) {
+            const popup = document.getElementById('contact-popup');
+            const btn = document.querySelector('.contact-btn');
+            if (popup.style.display === 'block' && !popup.contains(e.target) && e.target !== btn) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
